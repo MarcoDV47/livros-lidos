@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs'); -%>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+    <form class="add-book" action="/add" method="POST">
+        <fieldset>
+            <legend>Dados do Livro</legend>
+            <label for="title">Título</label>
+            <input required id="title" type="text" name="title">
+            <label for="rating">Rating</label>
+            <input required id="rating" type="number" max="5" min="0" name="rating">
+            <label for="summary">Resumo</label>
+            <textarea required id="summary" type="text" name="summary" cols="45"></textarea>
+            <label for="notes">Notas</label>
+            <textarea required id="notes" type="text" name="notes" cols="45" rows="15"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Dados da Capa</legend>
+            <label for="code">OLID Key:</label>
+            <input required id="code" type="text" name="code" maxlength="15">
+        </fieldset>
+        <button type="submit">Criar</button>
+    </form>
+
+    <%- include('partials/footer.ejs'); -%>

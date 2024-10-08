@@ -1,0 +1,40 @@
+<%- include('partials/header.ejs'); -%>
+    <a href="/">Home</a>
+
+    <% if(locals.book) { %>
+        <h1>
+            <%= book.title %>
+        </h1>
+        <menu class="book-actions">
+            <a id="delete" href="#">
+                Deletar
+                <img src="/assets/icons/delete.svg">
+            </a>
+            <a href="/edit/<%= book.id %>">
+                Editar
+                <img src="/assets/icons/edit.svg">
+            </a>
+        </menu>
+        <p>
+            Rating: <%= book.rating %>/5
+        </p>
+        <figure>
+            <img src="https://covers.openlibrary.org/b/OLID/<%=book.code%>-M.jpg" alt="<%= book.title %>">
+        </figure>
+        <hr>
+        <h2>Resumo</h2>
+        <p>
+            <%= book.summary %>
+        </p>
+        <h2>Notas</h2>
+        <p>
+            <%= book.notes %>
+        </p>
+        <%}%>
+            <script>
+                const button = document.getElementById("delete");
+                button.addEventListener("click", (e) => {
+                    if (confirm("Realmente apagar entrada?")) window.location.href = "http://localhost:3000/delete/<%= book.id %>"
+                })
+            </script>
+            <%- include('partials/footer.ejs'); -%>

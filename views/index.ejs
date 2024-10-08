@@ -1,0 +1,44 @@
+<%- include('partials/header.ejs'); -%>
+
+  <h1>Livros Lidos</h1>
+
+  <hr>
+  <menu class="books-order"> Ordenar por:
+    <a href="/?sort=id">Recentes</a>
+    <a href="/?sort=rating">Rating</a>
+    <a href="/?sort=title">Título</a>
+  </menu>
+
+  <a class="add-book" href="/add">Adicionar livro
+    <img src="/assets/icons/plus.svg">
+  </a>
+
+  <ul>
+    <% if(locals.books) { %>
+      <% books.map(book=> { %>
+        <li>
+          <figure>
+            <a href="/book/<%=book.id%>">
+              <img src="https://covers.openlibrary.org/b/OLID/<%=book.code%>-M.jpg" alt="<%= book.title %>">
+            </a>
+          </figure>
+          <article>
+            <h2>
+              <a href="/book/<%=book.id%>">
+                <%= book.title %>
+              </a>
+            </h2>
+            <p class="rating">
+              Rating: <%= book.rating %>/5
+            </p>
+            <p class="summary">
+              <%= book.summary %>
+            </p>
+          </article>
+        </li>
+        <hr>
+        <% }) %>
+          <% } %>
+  </ul>
+
+  <%- include('partials/footer.ejs'); -%>

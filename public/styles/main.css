@@ -1,0 +1,205 @@
+:root {
+  --primary-color-1: #1557e5;
+  --primary-color-2: #305CBB;
+  --primary-color-3: #3D5891;
+  --primary-color-4: #3C4966;
+
+  --neutral-color-1: #2D323C;
+  --neutral-color-2: #2D2F33;
+  --neutral-color-3: #DBDCED;
+}
+
+.playfair-display-PlayfairDisplay {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.open-sans-OpenSans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 95vh;
+  background-color: var(--neutral-color-3);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 60vw;
+}
+
+h1 {
+  color: var(--primary-color-2);
+  font-size: 3em;
+  padding: 10px;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h2:hover {
+  filter: brightness(110%);
+}
+
+menu {
+  padding: 0;
+  display: flex;
+}
+
+menu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: .8em;
+}
+
+menu.books-order a:first-child {
+  margin-left: 1em;
+}
+
+menu a#delete,
+menu a#delete:link {
+  color: #aa1c1c;
+}
+
+menu a img {
+  margin-left: .2em;
+}
+
+a img:hover {
+  filter: brightness(150%);
+}
+
+a {
+  color: var(--primary-color-2);
+}
+
+a:visited {
+  color: var(--primary-color-4);
+}
+
+a:hover {
+  color: var(--primary-color-2);
+}
+
+a.add-book {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+}
+
+figure {
+  margin-left: 0;
+}
+
+figure a img:hover {
+  filter: brightness(100%);
+}
+
+article {
+  text-align: left;
+}
+
+p.summary {
+  max-width: 300px;
+}
+
+p.rating {
+  font-size: 15px;
+  color: var(--neutral-color-1);
+}
+
+footer {
+  flex: 0 0 auto;
+  color: white;
+  text-align: center;
+}
+
+/* Add page */
+
+input,
+textarea {
+  display: block;
+}
+
+form.add-book {
+  margin: 3em auto;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 15px;
+}
+
+form.add-book fieldset {
+  margin-bottom: 1em;
+}
+
+form.add-book button {
+  padding: 1em;
+  font-family: inherit;
+  font-weight: bold;
+  border: 1px solid var(--primary-color-1);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+form.add-book button:hover {
+  background-color: var(--primary-color-1);
+  color: var(--neutral-color-3);
+}
+
+/* Media Query */
+
+@media (max-width: 500px) {
+  main {
+    max-width: 90vw;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    padding: 0;
+  }
+
+  hr {
+    border-color: #2D2F33;
+  }
+
+  li {
+    margin-right: 1.5em;
+    align-items: center;
+    display: block;
+  }
+
+  figure {
+    margin-right: 1em;
+  }
+
+  figure a img {
+    width: 7em;
+  }
+
+  a img {
+    width: 2em;
+  }
+}

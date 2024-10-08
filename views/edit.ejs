@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs'); -%>
+    <% if(locals.book) { %>
+        <nav>
+            <a href="/">Home</a>
+        </nav>
+        <form class="add-book" action="/edit/<%= book.id %>" method="POST">
+            <fieldset>
+                <legend>Dados do Livro</legend>
+                <label for="title">Título</label>
+                <input required id="title" type="text" name="title" value="<%= book.title %>">
+                <label for="rating">Rating</label>
+                <input required id="rating" type="number" max="5" min="0" name="rating" value="<%= book.rating %>">
+                <label for="summary">Resumo</label>
+                <textarea required id="summary" type="text" name="summary" cols="45"><% if(Array.isArray(book.summary)) { %><%book.summary.map(e => { %><%= e %><% }) %><% } else { %><%= book.summary %><% } %>
+                </textarea>
+                <label for="notes">Notas</label>
+                <textarea required id="notes" type="text" name="notes" cols="45" rows="15"><% if(Array.isArray(book.notes)) { %><%book.notes.map(e => { %><%= e %><% }) %><% } else { %><%= book.notes %><% } %>
+                </textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Dados da Capa</legend>
+                <label for="code">OLID Key:</label>
+                <input required id="code" type="text" name="code" value="<%= book.code %>">
+            </fieldset>
+            <button type="submit">Criar</button>
+        </form>
+        <% } %>
+            <%- include('partials/footer.ejs'); -%>
