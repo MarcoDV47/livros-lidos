@@ -28,9 +28,7 @@
 
   <p align="center">
     Um site minimalista para exibir analises de livros e anotações. Inspirado no site de Derek Sivers.
-
     Site criado com a intenção de praticar SQL.
-
     <br />
     <a href="https://github.com/MarcoDV47/livros-lidos"><strong>Explorar a documentação »</strong></a>
     <br />
