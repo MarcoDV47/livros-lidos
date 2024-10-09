@@ -1,4 +1,4 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<!-- Improved compatibility of voltar ao topo link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -66,7 +66,7 @@
 
 [![Site screenshot][product-screenshot]](./public/assets/images/screenshot.png)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 ## Funcionalidades
 
@@ -78,7 +78,7 @@
 
 [![HTML][html-link]](https://www.w3schools.com/html/) [![CSS][css-link]](https://www.w3schools.com/css/default.asp) [![JS][js-link]](https://www.w3schools.com/js/DEFAULT.asp)  [![Node][node-link]](https://nodejs.org/) [![Express][express-link]](https://expressjs.com/pt-br/) [![PostgreSQL][postgresql-link]](https://www.postgresql.org/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 ## Começando <a id="getting-started"></a>
 
@@ -110,13 +110,13 @@ ou
 
 <http://localhost:3000/>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 ## Licença <a id="license"></a>
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
