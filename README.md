@@ -27,7 +27,7 @@
 <h3 align="center">Livros Lidos</h3>
 
   <p align="center">
-    Um site minimalista para exibir analises de livros e anotações. Inspirado no site de Derek Sivers.
+    Um site minimalista para exibir analises de livros e anotações. Inspirado no site de <a href="https://sive.rs/book">Derek Sivers</a>.
     Site criado com a intenção de praticar SQL.
     <br />
     <a href="https://github.com/MarcoDV47/livros-lidos"><strong>Explorar a documentação »</strong></a>
