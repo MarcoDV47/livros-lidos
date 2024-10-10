@@ -94,11 +94,11 @@
 
 2. Navegue até o diretório do projeto:
 
-  `cd livros-lidos`
+    `cd livros-lidos`
 
 3. Instale pacotes NPM:
 
-  `npm i`
+    `npm i`
 
 4. Rode o arquivo index.js:
 
