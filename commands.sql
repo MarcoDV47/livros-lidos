@@ -1,0 +1,13 @@
+CREATE TABLE books (
+	id SERIAL PRIMARY KEY NOT NULL,
+	title VARCHAR(100) NOT NULL,
+	rating FLOAT NOT NULL,
+	code VARCHAR(15) NOT NULL
+)
+
+CREATE TABLE books_reviews(
+	id INT NOT NULL,
+	summary TEXT NOT NULL,
+	notes TEXT NOT NULL,
+	FOREIGN KEY (id) REFERENCES books(id)
+)

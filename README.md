@@ -100,13 +100,17 @@
 
   `npm i`
 
-4. Rode o arquivo index.js:
+3. Na sua base de dados, crie uma database chamada de books e rode os comandos do arquivo `commands.sql`
+
+4. No arquivo `index.js`, insira seu usuário e senha da base de dados
+
+5. Rode o arquivo `index.js` com:
 
     `nodemon index.js`
 ou
     `node index.js`
 
-5. Abra o site:
+6. Abra o site:
 
 <http://localhost:3000/>
 
