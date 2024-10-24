@@ -27,7 +27,7 @@
 <h3 align="center">Livros Lidos</h3>
 
   <p align="center">
-    Um site minimalista para exibir analises de livros e anotações. Inspirado no site de Derek Sivers.
+    Um site minimalista para exibir analises de livros e anotações. Inspirado no site de <a href="https://sive.rs/book">Derek Sivers</a>.
     Site criado com a intenção de praticar SQL.
     <br />
     <a href="https://github.com/MarcoDV47/livros-lidos"><strong>Explorar a documentação »</strong></a>
@@ -94,11 +94,11 @@
 
 2. Navegue até o diretório do projeto:
 
-  `cd livros-lidos`
+    `cd livros-lidos`
 
 3. Instale pacotes NPM:
 
-  `npm i`
+    `npm i`
 
 3. Na sua base de dados, crie uma database chamada de books e rode os comandos do arquivo `commands.sql`
 

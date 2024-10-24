@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 const db = new pg.Client({
-  user: "/* Usuário, padrão é postgres*/",
+  user: "postgres",
   host: "localhost",
   database: "books",
   password: "/* Senha */",
